@@ -109,23 +109,26 @@ void buscarElemento()
 {
 	if (nElementos == 0)
 	{
-		cout << "Tem nem numero irmão ";
+		cout << "Tem nem numero na lista \n";
 	}
-	cout << "FALA O NUMERO AI: ";
-	cin >> buscarNumero;
+	else
+	{
+		cout << "FALA O NUMERO AI: ";
+		cin >> buscarNumero;
 
-		for (int n = 0; n < nElementos; temNaLista = false )
+		for (int n = 0; n < nElementos; temNaLista = false)
 		{
 			if (buscarNumero == lista[n])
 			{
 				cout << "\nNumero encontrado na casa: ";
 
 				temNaLista = true;
-				cout << n + 1  << endl;			
+				cout << n + 1 << endl;
 			}
 			n++;
 		}
 		if (temNaLista == false) {
 			cout << "TA INVENTANDO NUMERO \n";
 		}
+	}
 }
