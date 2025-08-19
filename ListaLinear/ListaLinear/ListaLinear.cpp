@@ -16,6 +16,8 @@ void buscarElemento();
 const int MAX = 5;
 int lista[MAX]{};
 int nElementos = 0;
+int buscarNumero; 
+bool temNaLista = false;
 
 
 int main()
@@ -105,5 +107,25 @@ void inserirElemento()
 // deve ser implementada como resposta ao exercicio
 void buscarElemento()
 {
+	if (nElementos == 0)
+	{
+		cout << "Tem nem numero irmão ";
+	}
+	cout << "FALA O NUMERO AI: ";
+	cin >> buscarNumero;
 
+		for (int n = 0; n < nElementos; temNaLista = false )
+		{
+			if (buscarNumero == lista[n])
+			{
+				cout << "\nNumero encontrado na casa: ";
+
+				temNaLista = true;
+				cout << n + 1  << endl;			
+			}
+			n++;
+		}
+		if (temNaLista == false) {
+			cout << "TA INVENTANDO NUMERO \n";
+		}
 }
